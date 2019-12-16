@@ -8,6 +8,7 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
@@ -41,19 +42,19 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         // Add a marker in Sydney and move the camera
         LatLng mrpizza1 = new LatLng(-16.526209, -68.107822);
-        mMap.addMarker(new MarkerOptions().position(mrpizza1).title("Mr. Pizza 1"));
+        mMap.addMarker(new MarkerOptions().position(mrpizza1).title("Mr. Pizza 1")).setIcon(BitmapDescriptorFactory.fromResource(R.drawable.marker1));
         LatLng mrpizza2 = new LatLng(-16.524656, -68.086151);
-        mMap.addMarker(new MarkerOptions().position(mrpizza2).title("Mr. Pizza 2"));
+        mMap.addMarker(new MarkerOptions().position(mrpizza2).title("Mr. Pizza 2")).setIcon(BitmapDescriptorFactory.fromResource(R.drawable.marker2));
         LatLng mrpizza3 = new LatLng(-16.528807, -68.071133);
-        mMap.addMarker(new MarkerOptions().position(mrpizza3).title("Mr. Pizza 3"));
+        mMap.addMarker(new MarkerOptions().position(mrpizza3).title("Mr. Pizza 3")).setIcon(BitmapDescriptorFactory.fromResource(R.drawable.marker3));
         LatLng cozzolisi1 = new LatLng(-16.510325, -68.127930);
-        mMap.addMarker(new MarkerOptions().position(cozzolisi1).title("Cozzolisi 1"));
+        mMap.addMarker(new MarkerOptions().position(cozzolisi1).title("Cozzolisi 1")).setIcon(BitmapDescriptorFactory.fromResource(R.drawable.marker4));
         LatLng cozzolisi2 = new LatLng(-16.532250, -68.086801);
-        mMap.addMarker(new MarkerOptions().position(cozzolisi2).title("Cozzolisi 2"));
+        mMap.addMarker(new MarkerOptions().position(cozzolisi2).title("Cozzolisi 2")).setIcon(BitmapDescriptorFactory.fromResource(R.drawable.marker5));
         LatLng cozzolisi3 = new LatLng(-16.543362, -68.079489);
-        mMap.addMarker(new MarkerOptions().position(cozzolisi3).title("Cozzolisi 3"));
+        mMap.addMarker(new MarkerOptions().position(cozzolisi3).title("Cozzolisi 3")).setIcon(BitmapDescriptorFactory.fromResource(R.drawable.marker6));
         LatLng muela = new LatLng(-16.545006, -68.079183);
-        mMap.addMarker(new MarkerOptions().position(muela).title("Muela del diablo"));
+        mMap.addMarker(new MarkerOptions().position(muela).title("Muela del diablo")).setIcon(BitmapDescriptorFactory.fromResource(R.drawable.marker7));
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(muela,12));
     }
 }
